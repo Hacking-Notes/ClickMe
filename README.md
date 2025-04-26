@@ -2,6 +2,10 @@
 
 ClickMe is an advanced framework for security professionals to create, test, and demonstrate **multi-step clickjacking vulnerabilities**. With an intuitive interface and powerful customization options, Clickme makes building complex proofs-of-concept for educational and security awareness purposes easy.
 
+### What is multistep clickjacking
+Multi-step clickjacking extends the deceptive principles of basic clickjacking into a more sophisticated and dangerous attack chain. While traditional clickjacking aims to trick users into performing a single unintended action, multi-step variants orchestrate coordinated interactions across multiple pages or states.
+
+
 ![image](https://github.com/user-attachments/assets/d1bcda1d-9844-409c-8371-cd07a1767b7a)
 
 | Normal Button | Captcha Checkbox | Captcha Puzzle |
@@ -18,9 +22,6 @@ ClickMe is an advanced framework for security professionals to create, test, and
 | 🖼️ **Background Options** | Select from various background types to enhance disguise effectiveness |
 | 💾 **Export Functionality** | Export your POC for demonstrations or educational purposes |
 | 🔍 **Transparency Controls** | Fine-tune overlay transparency for optimal attack design |
-
-
-## Security Notice
 
 Clickme is only designed for educational purposes, security research, and authorized penetration testing. Always obtain proper authorization before testing clickjacking vulnerabilities on any system or website. Unauthorized testing may violate laws and terms of service.
 <br>
