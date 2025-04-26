@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/mc.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/mc.ico" type="image/x-icon">
+</head>
+<body>
+ <!-- Loading Overlay -->
+ <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: 9999; transition: opacity 0.5s ease;"></div>
+
+ <!-- ######################################################### -->
+
+    <!-- Section Regarding the Iframe -->
+    <div id="iframe-section">
+        <div class="main-container">
+            <div class="container">
+                <iframe id="iframe" src=""></iframe>
+                <!-- Add red overlay div -->
+                <div id="red-overlay"></div>
+                <div id="button-container">
+                    <div id="normal-button">
+                        <button class="normal-button">Click Me</button>
+                    </div>
+                    <!-- Add green overlay for normal button -->
+                    <div id="normal-button-overlay"></div>
+                    <div id="captcha-checkbox-button">
+                        <div class="button-overlay captcha-button">
+                            <div class="captcha-content">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-checkmark">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="#009688" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+                                        </svg>
+                                    </div>
+                                    <!-- Green overlay div to cover the checkbox -->
+                                    <div class="green-overlay" style="pointer-events: auto !important;"></div>
+                                </div>
+                                <div class="captcha-text-container">
+                                    <div class="captcha-text">
+                                        I'm not a robot
+                                    </div>
+                                    <div class="captcha-brand">
+                                        <img src="img/hcaptcha.jpg" class="captcha-logo">
+                                        <span class="captcha-label">reCAPTCHA</span>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVDhPrVRBbsIwENwI8QEeQHkE5Asc4QlIvKD8gEsvCA6V+AE3HoDE0RISt0g5VYrUA6pK4QlsoqSd8TqWg9cJDh1pZMeeHXttr1T/Qr1eH1m2XYqqqg6T6WwbhiFExzHGbyaT8U1wnbXb7T7yE6QUoVWv3W53KRqdwst3IZvNPgvR6BR7+UYuQC4Wi8Xj4XB4xvnD9/0XrC9Q/wbwfOh0Oq/b7XYjRA+DwQC8Aq4xjuN4aZreF/L5/BM8f8H1ES5P2KsgCN7CMHwUogdcH+DyiHnE9RPjF8x9IXrA9R4uD3D5gHmL+QvmvhA9NBqNMVy2mLdw+QSXN8xvhegBhQu4bFGQgusSBSlcXoXoAb9DD4UrFF5QkMJlI0QPKFyi8AuFKQo3QvQwHA5f/gDf6ofN+s6+DAAAAABJRU5ErkJggg==" class="captcha-badge">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="captcha-puzzle-button">
+                        <div class="container">
+                            <div class="main-image">
+                                <div class="instruction">
+                                    Please click on the entity that is most related to the sample image.
+                                </div>
+                                <img class="bg-1" src="img/bg1.png" alt="Main image">
+                                <img class="fly-1" src="img/fly1.png" alt="fly">
+                                <!-- Add green overlay for fly -->
+                                <div id="fly-overlay"></div>
+                                <img class="cow-1" src="img/cow1.png" alt="cow">
+                                <img class="cow-2" src="img/cow2.png" alt="cow">
+                                <img class="cow-3" src="img/cow3.png" alt="cow">
+                            </div>
+                            <div class="dots-container">
+                                <div class="dot-1"></div>
+                                <div class="dot-2"></div>
+                                <div class="dot-3"></div>
+                                <div class="dot-4"></div>
+                            </div>
+                            <div class="bottom-images">
+                            <img src="img/1.jpg" alt="Option 1">
+                            <img src="img/2.jpg" alt="Option 2">
+                            <img src="img/3.jpg" alt="Option 3">
+                            </div>
+                            <div class="footer">
+                            <div class="hcaptcha-logo-2"><img src="img/hcaptcha.jpg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fake-background">
+                    <div id="white-background">
+                    </div>
+                    <div id="social-media-background">
+                        <div class="website-content">
+                            <nav class="navbar">
+                              <div class="nav-content">
+                                <div class="logo">SocialMetrics</div>
+                                <div class="nav-links">
+                                  <a href="#" class="nav-link">Home</a>
+                                  <a href="#" class="nav-link">Strategies</a>
+                                  <a href="#" class="nav-link">Case Studies</a>
+                                  <a href="#" class="nav-link">Resources</a>
+                                  <a href="#" class="nav-link">About</a>
+                                </div>
+                              </div>
+                            </nav>
+                            <div class="main-content">
+                              <div class="hero">
+                                <h1>Master Your Social Media Strategy</h1>
+                                <p>Discover proven strategies, expert insights, and actionable tips to elevate your social media presence and drive meaningful engagement.</p>
+                              </div>
+                              <div class="cards">
+                                <div class="card">
+                                  <h3>Content Strategy</h3>
+                                  <p>Learn how to create compelling content that resonates with your audience and drives engagement across all platforms.</p>
+                                </div>
+                                <div class="card">
+                                  <h3>Growth Tactics</h3>
+                                  <p>Explore innovative approaches to grow your following and increase your social media reach effectively.</p>
+                                </div>
+                                <div class="card">
+                                  <h3>Analytics & ROI</h3>
+                                  <p>Understand how to measure success and optimize your social media efforts for maximum return on investment.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="iframe.js"></script>
+        <link rel="stylesheet" href="iframe.css">
+    </div>
+
+<!-- ######################################################### -->
+
+    <!-- Section Regarding the Menu -->
+    <div id="menu">
+        <div class="mc-logo">
+            <a href="https://github.com" target="_blank">
+                <img src="img/MC.png" id="mc-logo">
+            </a>
+        </div>
+        <div class="iframe-control-dropdown">
+            <button class="iframe-control-button" onclick="toggleDropdown(event)">Current Step ▾</button>
+            <div class="dropdown-content">
+                <div class="dropdown-item" onclick="toggleIframe()">Temporary(Dynamic)</div>
+                <div class="dropdown-item" onclick="reloadIframe()">Temporary(Dynamic)</div>
+                <div class="dropdown-item" onclick="resetIframe()">Temporary(Dynamic)</div>
+            </div>
+        </div>
+
+        <div class="left-controls">
+            <button class="left-control-button" onclick="handleLeftButton1()">Show Areas</button>
+            <button class="left-control-button red custom-toggle" id="toggle-button">Background: OFF</button>
+            <button class="left-control-button red custom-toggle" id="transparency-button">Transparency: OFF</button>
+        </div>
+
+        <!-- Section 1 | Settings -->
+        <div class="menu-section" id="section-1">
+            <div class="settings-header" onclick="toggleSettings()">
+                <h3>Settings</h3>
+            </div>
+            <div id="settings-panel" class="settings-panel">
+                <form id="iframe-settings">
+                    <div class="setting-group">
+                        <label for="page-title">Page Title:</label>
+                        <input type="text" id="page-title" name="page-title" placeholder="Enter page title">
+                    </div>
+                    <div class="setting-group">
+                        <label for="iframe-url">URL:</label>
+                        <input type="text" id="iframe-url" name="url" placeholder="Enter website URL">
+                    </div>
+                    <div class="setting-group">
+                        <label for="background-select">Background:</label>
+                        <select id="background-select" name="background">
+                            <option value="none">None</option>
+                            <option value="white">White</option>
+                            <option value="social-media">Social Media</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <input type="checkbox" id="credentialless-iframe" name="credentialless">
+                        <label for="credentialless-iframe">Credential-less iframe</label>
+                        <div class="setting-description">Loads the iframe without sharing credentials, cookies or storage, preventing automatic authentication.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <!-- Section 2 | Step List -->
+        <div class="fixed-sections-container">
+            <!-- Section 2 -->
+            <div class="menu-section" id="section-2">
+                <div class="section-header">
+                    <h3>Steps List</h3>
+                    <div class="action-buttons">
+                        <button id="next-step" onclick="addSeparator()">Next Step</button>
+                        <button id="clear-steps" onclick="clearSteps()">Clear All</button>
+                    </div>
+                </div>
+                <div id="steps-list" class="drop-zone" ondragover="allowDrop(event)" ondrop="drop(event)">
+                    <div class="drop-instruction">Drag items here</div>
+                </div>
+            </div>
+            
+
+            <!-- Section 3 | Available Elements -->
+            <div class="menu-section" id="section-3">
+                <h3>Available Elements</h3>
+                <div class="draggable-container">
+                    <div class="draggable-item" draggable="true" ondragstart="drag(event)" ondragend="dragEnd()" id="drag1">JS Script</div>
+                    <div class="draggable-item" draggable="true" ondragstart="drag(event)" ondragend="dragEnd()" id="drag2">Button</div>
+                </div>
+            </div>
+            
+
+            <!-- Section 4 | Export Button Section -->
+            <div class="export-section">
+                <button id="export-btn" onclick="exportSteps()">Export Clickjacking POC</button>
+            </div>
+        </div>
+
+        <!-- Export Preview Popup -->
+        <div id="export-preview" class="export-preview">
+            <div class="export-preview-content">
+                <div class="export-preview-header">
+                    <h3>Export Preview</h3>
+                    <button class="close-preview" onclick="closeExportPreview()">&times;</button>
+                </div>
+                <div class="export-preview-body">
+                    <div class="export-instructions">
+                        <h4>Instructions:</h4>
+                        <ul>
+                            <li>Please <b><u>read all instructions before proceeding</u></b></li>
+                            <li>Open menu.js in your preferred text editor</li>
+                            <li>Copy the defaultSettings configuration below</li>
+                            <li>Replace the existing defaultSettings in menu.js</li>
+                            <li>Save the file to apply changes</li>
+                        </ul>
+                        <hr style="border: none; border-top: 1px solid #2b2b2b; margin: 10px 0;">
+                        <ul>
+                            <li><b>Important:</b> The exported configuration will only be applied when loading the application <u>without</u> the <code>?menu=true</code> URL parameter</li>
+                            <li>When using <code>?menu=true</code>, the application will use settings from localStorage instead</li>
+                            <li>If nothing appears below, try making a minor change and then reverting it.</li>
+                        </ul>
+                    </div>
+                    <pre id="export-code"></pre>
+                    <div class="export-preview-actions">
+                        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+                        <button onclick="closeExportPreview()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="menu.js"></script>
+        <link rel="stylesheet" href="menu.css">
+    </div>
+
+<!-- ######################################################### -->
+
+<!-- Script Detecting POC or Building -->
+<script>
+    const menu = document.getElementById('menu');
+    const iframe_section = document.getElementById('iframe-section');
+    const whiteBackground = document.getElementById('white-background');
+    const socialMediaBackground = document.getElementById('social-media-background');
+    const loadingOverlay = document.getElementById('loading-overlay');
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuElement = document.getElementById('menu');
+        const urlParams = new URLSearchParams(window.location.search);
+        const showMenu = urlParams.get('menu') === 'true';
+
+        if (menuElement) {
+            if (showMenu) {
+                menuElement.style.display = 'flex';
+                menu.style.width = '350px';
+                iframe_section.style.width = 'calc(100% - 350px)';
+                
+                // Adjust backgrounds to match iframe section width
+                if (whiteBackground) whiteBackground.style.width = 'calc(100% - 350px)';
+                if (socialMediaBackground) socialMediaBackground.style.width = 'calc(100% - 350px)';
+            } else {
+                menuElement.style.display = 'none';
+                iframe_section.style.width = '100%';
+                
+                // Reset backgrounds to full width
+                if (whiteBackground) whiteBackground.style.width = '100%';
+                if (socialMediaBackground) socialMediaBackground.style.width = '100%';
+            }
+        } else {
+            iframe_section.style.width = '100%';
+            
+            // Reset backgrounds to full width
+            if (whiteBackground) whiteBackground.style.width = '100%';
+            if (socialMediaBackground) socialMediaBackground.style.width = '100%';
+        }
+    });
+
+    // Hide loading overlay when everything is loaded
+    window.addEventListener('load', function() {
+        if (loadingOverlay) {
+            loadingOverlay.style.opacity = '0';
+            setTimeout(function() {
+                loadingOverlay.style.display = 'none';
+            }, 500);
+        }
+    });
+</script>
+
+<!-- Script Background -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const showMenu = urlParams.get('menu') === 'true';
+        const toggleButton = document.getElementById('toggle-button');
+        const transparencyButton = document.getElementById('transparency-button');
+        const buttonContainer = document.getElementById('button-container');
+        const pageTitleInput = document.getElementById('page-title');
+        
+        // Handle page title changes
+        if (pageTitleInput) {
+            // Set initial value if stored in localStorage
+            const storedSettings = localStorage.getItem('clickjackingSettings');
+            if (storedSettings) {
+                try {
+                    const settings = JSON.parse(storedSettings);
+                    if (settings.pageTitle) {
+                        pageTitleInput.value = settings.pageTitle;
+                        document.title = settings.pageTitle;
+                    }
+                } catch (e) {
+                    console.error('Error parsing localStorage settings', e);
+                }
+            }
+            
+            // Listen for changes to update title and save to settings
+            pageTitleInput.addEventListener('input', function() {
+                const newTitle = pageTitleInput.value.trim();
+                document.title = newTitle || "ClickMe POC";
+                
+                // Save to localStorage
+                const storedSettings = localStorage.getItem('clickjackingSettings');
+                if (storedSettings) {
+                    try {
+                        const settings = JSON.parse(storedSettings);
+                        settings.pageTitle = newTitle;
+                        localStorage.setItem('clickjackingSettings', JSON.stringify(settings));
+                    } catch (e) {
+                        console.error('Error updating settings', e);
+                    }
+                } else {
+                    const newSettings = {
+                        pageTitle: newTitle,
+                        url: '',
+                        background: 'none',
+                        credentialless: false,
+                        steps: {}
+                    };
+                    localStorage.setItem('clickjackingSettings', JSON.stringify(newSettings));
+                }
+            });
+        }
+        
+        // Settings handling
+        let settings;
+        
+        function getCurrentSettings() {
+            // Always get the latest settings
+            if (showMenu) {
+                // If menu=true, load settings from localStorage
+                const storedSettings = localStorage.getItem('clickjackingSettings');
+                if (storedSettings) {
+                    try {
+                        return JSON.parse(storedSettings);
+                    } catch (e) {
+                        console.error('Error parsing localStorage settings', e);
+                        return typeof defaultSettings !== 'undefined' ? defaultSettings : 
+                            {url: 'https://example.com', background: 'none', credentialless: true, steps: {}};
+                    }
+                } else {
+                    // Fallback to defaultSettings if localStorage is empty
+                    return typeof defaultSettings !== 'undefined' ? defaultSettings : 
+                        {url: 'https://example.com', background: 'none', credentialless: true, steps: {}};
+                }
+            } else {
+                // If loading normally (no menu=true), use defaultSettings from menu.js
+                return typeof defaultSettings !== 'undefined' ? defaultSettings : 
+                    {url: 'https://example.com', background: 'none', credentialless: true, steps: {}};
+            }
+        }
+        
+        // Get initial settings
+        settings = getCurrentSettings();
+        
+        // Apply settings
+        const iframe = document.getElementById('iframe');
+        if (iframe && settings.url) {
+            iframe.src = settings.url;
+        }
+        
+        // Initialize credentialless attribute if needed
+        if (iframe && settings.credentialless) {
+            iframe.setAttribute('credentialless', '');
+        } else if (iframe) {
+            iframe.removeAttribute('credentialless');
+            console.log("Credentialless is disabled.");
+        }
+        
+        // Elements that will be controlled by the toggle button
+        const fakeBackground = document.getElementById('fake-background');
+        const whiteBackground = document.getElementById('white-background');
+        const socialMediaBackground = document.getElementById('social-media-background');
+        
+        // Function to update background visibility
+        function updateBackgroundVisibility(shouldShow) {
+            // Get current settings to ensure we have the latest background type
+            const currentSettings = getCurrentSettings();
+            const currentBackgroundType = currentSettings.background;
+            
+            console.log('Current background type:', currentBackgroundType);
+            
+            // First, update display status of all backgrounds
+            if (fakeBackground) fakeBackground.style.display = shouldShow ? 'block' : 'none';
+            if (whiteBackground) whiteBackground.style.display = 'none';
+            if (socialMediaBackground) socialMediaBackground.style.display = 'none';
+            
+            // Then, if showing, apply the specific background based on current settings
+            if (shouldShow) {
+                if (currentBackgroundType === 'white' && whiteBackground) {
+                    whiteBackground.style.display = 'block';
+                } else if (currentBackgroundType === 'social-media' && socialMediaBackground) {
+                    socialMediaBackground.style.display = 'block';
+                }
+            }
+        }
+        
+        // Button toggle functionality
+        if (toggleButton) {
+            // Initialize button based on URL parameter
+            let isOn = !showMenu; // Default: OFF when menu=true, ON otherwise
+            
+            function updateToggleState() {
+                if (isOn) {
+                    // ON state - show backgrounds
+                    toggleButton.textContent = 'Background: ON';
+                    toggleButton.classList.remove('red');
+                    toggleButton.classList.add('green');
+                    updateBackgroundVisibility(true);
+                    console.log('on');
+                } else {
+                    // OFF state - hide backgrounds
+                    toggleButton.textContent = 'Background: OFF';
+                    toggleButton.classList.remove('green');
+                    toggleButton.classList.add('red');
+                    updateBackgroundVisibility(false);
+                    console.log('off');
+                }
+            }
+            
+            // Set initial state
+            updateToggleState();
+            
+            // Add toggle functionality to the button
+            toggleButton.onclick = function() {
+                isOn = !isOn; // Toggle state
+                updateToggleState();
+            };
+        }
+
+        // Transparency toggle functionality
+        if (transparencyButton && buttonContainer) {
+            // Initialize transparency state - Default: OFF
+            let isTransparent = false;
+            
+            function updateTransparencyState() {
+                if (isTransparent) {
+                    // ON state - make button container transparent
+                    transparencyButton.textContent = 'Transparency: ON';
+                    transparencyButton.classList.remove('red');
+                    transparencyButton.classList.add('green');
+                    buttonContainer.classList.add('transparent');
+                    console.log('transparency on');
+                } else {
+                    // OFF state - make button container opaque
+                    transparencyButton.textContent = 'Transparency: OFF';
+                    transparencyButton.classList.remove('green');
+                    transparencyButton.classList.add('red');
+                    buttonContainer.classList.remove('transparent');
+                    console.log('transparency off');
+                }
+            }
+            
+            // Set initial state
+            updateTransparencyState();
+            
+            // Add toggle functionality to the button
+            transparencyButton.onclick = function() {
+                isTransparent = !isTransparent; // Toggle state
+                updateTransparencyState();
+            };
+        }
+    });
+</script>
+
+</body>
