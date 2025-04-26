@@ -1,6 +1,6 @@
-# Clickme
+# ClickMe
 
-Clickme is an advanced framework for security professionals to create, test, and demonstrate multi-step clickjacking vulnerabilities. With an intuitive interface and powerful customization options, Clickme makes building complex proofs-of-concept for educational and security awareness purposes easy.
+ClickMe is an advanced framework for security professionals to create, test, and demonstrate multi-step clickjacking vulnerabilities. With an intuitive interface and powerful customization options, Clickme makes building complex proofs-of-concept for educational and security awareness purposes easy.
 
 ![image](https://github.com/user-attachments/assets/d1bcda1d-9844-409c-8371-cd07a1767b7a)
 <br>
