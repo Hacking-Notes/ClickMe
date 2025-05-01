@@ -170,6 +170,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add state tracking for mouseover events
     let lastMouseoverTime = 0;
     let timeoutInProgress = false;
+    let lastProcessedStep = 0;  // Track the last step we processed
+    let stepChangeInProgress = false;  // New flag to track step changes
 
     // Add mouse event handlers for all overlays
     const redOverlay = document.getElementById('red-overlay');
@@ -177,11 +179,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Helper function to handle mouseover for any overlay
     function handleOverlayMouseOver(e) {
-        // If a timeout is already in progress, ignore this mouseover
-        if (timeoutInProgress) {
+        // Get current step number
+        const currentButton = document.querySelector('.iframe-control-button');
+        if (!currentButton || !currentButton.dataset.currentStep) return;
+        
+        const currentStepNumber = parseInt(currentButton.dataset.currentStep);
+
+        // If a timeout is in progress or we're changing steps, ignore the mouseover
+        if (timeoutInProgress || stepChangeInProgress) {
             return;
         }
 
+        // If this step was already processed, ignore the mouseover
+        if (currentStepNumber === lastProcessedStep) {
+            return;
+        }
+
+        // Record this step as being processed
+        lastProcessedStep = currentStepNumber;
+        
         // Record the time of this mouseover event
         lastMouseoverTime = Date.now();
 
@@ -271,6 +287,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Set a timeout to advance to the next step
         console.log(`Will advance to next step after ${timeoutValue}ms`);
+        stepChangeInProgress = true;  // Mark that we're about to change steps
+        
         setTimeout(() => {
             // Get the steps again in case they changed
             const steps = document.querySelectorAll('.step-container');
@@ -282,12 +300,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Reset all overlays for the new step
                 resetAllOverlays();
                 
-                // Reset the timeout flag to allow new mouseover events
+                // Reset the flags
                 timeoutInProgress = false;
                 
                 // Call the selectStep function from menu.js
                 if (typeof selectStep === 'function') {
                     selectStep(nextStepNumber);
+                    // Wait a bit to ensure the step change is complete
+                    setTimeout(() => {
+                        stepChangeInProgress = false;  // Allow new mouseover events
+                    }, 100);
                 } else {
                     console.error('selectStep function not found in global scope');
                     
@@ -301,11 +323,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Manually trigger step change event
                     const event = new Event('stepChanged');
                     document.dispatchEvent(event);
+                    
+                    // Reset the step change flag
+                    stepChangeInProgress = false;
                 }
             } else {
                 console.log('This is the last step, no more steps to advance to');
-                // Reset the timeout flag since we're at the last step
+                // Reset all flags
                 timeoutInProgress = false;
+                stepChangeInProgress = false;
+                lastProcessedStep = 0;
             }
         }, timeoutValue);
     }
