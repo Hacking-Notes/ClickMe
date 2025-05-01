@@ -3301,6 +3301,12 @@ function updateCaptchaPuzzleDots(stepValue, totalDotsValue) {
     const captchaPuzzle = document.getElementById('captcha-puzzle-button');
     
     if (captchaPuzzle) {
+        // Check if the values have actually changed
+        if (captchaPuzzle.dataset.currentStep === String(safeStep) && 
+            captchaPuzzle.dataset.totalDots === String(safeTotalDots)) {
+            return false; // No update needed
+        }
+
         // Update dots visibility and colors
         for (let i = 1; i <= 4; i++) {
             const dot = captchaPuzzle.querySelector(`.dot-${i}`);
@@ -3320,10 +3326,8 @@ function updateCaptchaPuzzleDots(stepValue, totalDotsValue) {
         
         // Update background image based on step
         const bgImage = captchaPuzzle.querySelector('.bg-1');
-        if (bgImage) {
-            // Set background image based on step number
+        if (bgImage && bgImage.src !== `img/bg${safeStep}.png`) {
             bgImage.src = `img/bg${safeStep}.png`;
-            console.log(`Updated background image to bg${safeStep}.png for step ${safeStep}`);
         }
         
         // Store the value in a data attribute for later reference
@@ -3423,7 +3427,7 @@ setInterval(function() {
     ensureMenuControlsAreClickable();
     ensureCorrectDotsVisibility();
     ensureGreenOverlayVisibility(); // Also explicitly check for green overlay visibility
-}, 100); // Reduced interval time to check more frequently
+}, 1000); // Reduced interval time to check more frequently
 
 // ... existing code ...
 function ensureGreenOverlayVisibility() {
