@@ -26,7 +26,9 @@ Multi-step clickjacking extends the deceptive principles of basic clickjacking i
 | 🔍 **Transparency Controls** | Fine-tune overlay transparency for optimal attack design |
 
 Clickme is only designed for educational purposes, security research, and authorized penetration testing. Always obtain proper authorization before testing clickjacking vulnerabilities on any system or website. Unauthorized testing may violate laws and terms of service.
-<br>
+<be>
+
+![multiple-click](https://github.com/user-attachments/assets/b3e848b8-4a83-4739-b12d-3bd3a3e6d083)
 
 ## License
 
