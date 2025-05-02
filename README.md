@@ -7,8 +7,8 @@ Try it now: <a href="https://clickme.hacking-poc.com/?menu=true">https://clickme
 ### What is multistep clickjacking
 Multi-step clickjacking extends the deceptive principles of basic clickjacking into a more sophisticated and dangerous attack chain. While traditional clickjacking aims to trick users into performing a single unintended action, multi-step variants orchestrate coordinated interactions across multiple pages or states.
 
+https://github.com/user-attachments/assets/a94b2fea-44e6-48a7-a858-8ec6f8e49c2d
 
-![image](https://github.com/user-attachments/assets/d1bcda1d-9844-409c-8371-cd07a1767b7a)
 
 | Normal Button | Captcha Checkbox | Captcha Puzzle |
 | ------------- | ---------------- | -------------- |
