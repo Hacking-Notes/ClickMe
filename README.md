@@ -26,11 +26,7 @@ https://github.com/user-attachments/assets/a94b2fea-44e6-48a7-a858-8ec6f8e49c2d
 | 🔍 **Transparency Controls** | Fine-tune overlay transparency for optimal attack design |
 
 Clickme is only designed for educational purposes, security research, and authorized penetration testing. Always obtain proper authorization before testing clickjacking vulnerabilities on any system or website. Unauthorized testing may violate laws and terms of service.
-<be>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b3e848b8-4a83-4739-b12d-3bd3a3e6d083" width="80%" alt="multiple-click">
-</p>
+<br>
 
 
 ## License
