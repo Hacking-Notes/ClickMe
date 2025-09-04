@@ -1,7 +1,7 @@
 // Section to export (Values) //
 
 const defaultSettings = {
-    "url": "http://example.com",
+    "url": "https://example.com",
     "background": "social-media",
     "credentialless": true,
     "steps": {
