@@ -1,3 +1,12 @@
+<div align="center">
+
+<kbd>&nbsp;CLICKJACKING&nbsp;</kbd> &nbsp; <kbd>&nbsp;POC FRAMEWORK&nbsp;</kbd> &nbsp; <kbd>&nbsp;RED TEAM&nbsp;</kbd> &nbsp; 
+
+[![Website](https://img.shields.io/badge/WEBSITE-hacking--notes.com-ff3333?style=flat-square&labelColor=000000)](https://hacking-notes.com)
+[![License](https://img.shields.io/badge/LICENSE-MIT-3388ff?style=flat-square&labelColor=000000)](LICENSE)
+
+</div>
+
 # <img src="https://github.com/user-attachments/assets/25303dad-a568-4357-ab98-436ae5707d30" alt="MC" width="40"/> ClickMe 
 
 ClickMe is an advanced framework for security professionals to create, test, and demonstrate **multi-step clickjacking vulnerabilities**. With an intuitive interface and powerful customization options, Clickme makes building complex proofs-of-concept for educational and security awareness purposes easy.
@@ -43,3 +52,18 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+<br>
+
+<div align="center">
+
+### ───────────────  HACKING NOTES ECOSYSTEM  ───────────────
+
+[![Website](https://img.shields.io/badge/🌐_WEBSITE-hacking--notes.com-ff3333?style=flat-square&labelColor=000000)](https://hacking-notes.com)
+[![Roadmap](https://img.shields.io/badge/🗺_ROADMAP-Hacker--Roadmap-f5f5f5?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/Hacker-Roadmap)
+[![RedTeam](https://img.shields.io/badge/🔴_RED_TEAM-notes-ff3333?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/RedTeam)
+[![BlueTeam](https://img.shields.io/badge/🔵_BLUE_TEAM-notes-3388ff?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/BlueTeam)
+
+<sub><code>// part of the Hacking Notes toolkit — hacking-notes.com</code></sub>
+
+</div>
