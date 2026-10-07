@@ -1,13 +1,20 @@
+<a name="top"></a>
+
 <div align="center">
 
-<kbd>&nbsp;CLICKJACKING&nbsp;</kbd> &nbsp; <kbd>&nbsp;POC FRAMEWORK&nbsp;</kbd> &nbsp; <kbd>&nbsp;RED TEAM&nbsp;</kbd> &nbsp; 
+<img src="assets/header.svg" alt="ClickMe" width="100%" />
 
-[![Website](https://img.shields.io/badge/WEBSITE-hacking--notes.com-ff3333?style=flat-square&labelColor=000000)](https://hacking-notes.com)
-[![License](https://img.shields.io/badge/LICENSE-MIT-3388ff?style=flat-square&labelColor=000000)](LICENSE)
+<br />
+
+<a href="https://github.com/Hacking-Notes/ClickMe/stargazers"><img src="https://img.shields.io/github/stars/Hacking-Notes/ClickMe?style=for-the-badge&logo=github&logoColor=1f2328&label=Stars&labelColor=f6f8fa&color=059669" alt="Stars" /></a>
+<a href="https://github.com/Hacking-Notes/ClickMe/network/members"><img src="https://img.shields.io/github/forks/Hacking-Notes/ClickMe?style=for-the-badge&logo=git&logoColor=1f2328&label=Forks&labelColor=f6f8fa&color=0284c7" alt="Forks" /></a>
+<a href="https://github.com/Hacking-Notes/ClickMe/commits"><img src="https://img.shields.io/github/last-commit/Hacking-Notes/ClickMe?style=for-the-badge&label=Updated&labelColor=f6f8fa&color=7c3aed" alt="Last commit" /></a>
+<a href="LICENSE"><img src="https://img.shields.io/github/license/Hacking-Notes/ClickMe?style=for-the-badge&label=License&labelColor=f6f8fa&color=db2777" alt="License" /></a>
+<a href="https://hacking-notes.com"><img src="https://img.shields.io/badge/More-hacking--notes.com-db2777?style=for-the-badge&labelColor=f6f8fa" alt="hacking-notes.com" /></a>
 
 </div>
 
-# <img src="https://github.com/user-attachments/assets/25303dad-a568-4357-ab98-436ae5707d30" alt="MC" width="40"/> ClickMe 
+<br />
 
 ClickMe is an advanced framework for security professionals to create, test, and demonstrate **multi-step clickjacking vulnerabilities**. With an intuitive interface and powerful customization options, Clickme makes building complex proofs-of-concept for educational and security awareness purposes easy.
 
@@ -38,10 +45,16 @@ Clickme is only designed for educational purposes, security research, and author
 <br>
 
 
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 <br>
+
+
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Contributing
 
@@ -53,17 +66,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-<br>
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🧰 Hacking Notes Ecosystem
 
 <div align="center">
 
-### ───────────────  HACKING NOTES ECOSYSTEM  ───────────────
-
-[![Website](https://img.shields.io/badge/🌐_WEBSITE-hacking--notes.com-ff3333?style=flat-square&labelColor=000000)](https://hacking-notes.com)
-[![Roadmap](https://img.shields.io/badge/🗺_ROADMAP-Hacker--Roadmap-f5f5f5?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/Hacker-Roadmap)
-[![RedTeam](https://img.shields.io/badge/🔴_RED_TEAM-notes-ff3333?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/RedTeam)
-[![BlueTeam](https://img.shields.io/badge/🔵_BLUE_TEAM-notes-3388ff?style=flat-square&labelColor=000000)](https://github.com/Hacking-Notes/BlueTeam)
-
-<sub><code>// part of the Hacking Notes toolkit — hacking-notes.com</code></sub>
+🌐 &nbsp;**[hacking-notes.com](https://hacking-notes.com)** &nbsp;·&nbsp; ✍️ &nbsp;**[blog](https://hacking-notes.medium.com/)** &nbsp;·&nbsp; 💬 &nbsp;**[discord](https://discord.gg/r68ameNHrD)**
 
 </div>
+
+| | Resource | What you get |
+| :-: | -------- | ------------ |
+| 🗺 | **[Hacker-Roadmap](https://github.com/Hacking-Notes/Hacker-Roadmap)** | Structured paths from beginner to pro — hobbyist, bug bounty, certs & degree. |
+| 🔴 | **[RedTeam Notes](https://github.com/Hacking-Notes/RedTeam)** | Offensive security notes: recon, exploitation, Windows & Linux. |
+| 🔷 | **[BlueTeam Notes](https://github.com/Hacking-Notes/BlueTeam)** | Defensive security notes: forensics, malware, log & packet analysis. |
+| 🧩 | **[Extensions](https://github.com/Hacking-Notes/Extensions)** | Curated Chrome extensions for ethical hacking & recon. |
+| 🔖 | **[Bookmarks](https://github.com/Hacking-Notes/Bookmarks)** | Curated hacker bookmark collection, one import away. |
+
+<img src="assets/footer.svg" width="100%" alt="" />
+
+<div align="right"><a href="#top">⬆ back to top</a></div>
